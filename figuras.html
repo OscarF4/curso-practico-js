@@ -8,6 +8,10 @@
     <style>
         body {
             box-sizing: border-box;
+            background-color: rgba(0,0,0,0.12);
+        }
+        h2 {
+            margin: 11px 0;
         }
         input {
             margin-top: 5px;
@@ -25,21 +29,53 @@
         </p>
     </header>
 
+    <!-- Cuadrado -->
     <section>
         <h2>Cuadrado</h2>
         <form>
             <label for="inputCuadrado">
-                Escribe cuanto mide cada lado de tu cuadrado
+                Lado:
             </label>
-            <br>
             <input id="inputCuadrado" type="number" name="" id="">
             <br>
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular el perímetro
-            </button>
             <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular el área
+                Calcular área
             </button>
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular perímetro
+            </button>
+            <br>
+            <p id="resultadoCuadrado"></p>
+        </form>
+    </section>
+
+    <!-- Triángulo Isóceles -->
+    <section>
+        <h2>Triángulo Isósceles</h2>
+        <form>
+            <label for="lado1TrianguloIsosceles">
+                lado 1:
+            </label>
+            <input id="lado1TrianguloIsosceles" type="number">
+            <br>
+            <label for="lado2TrianguloIsosceles">
+                lado 2:
+            </label>
+            <input id="lado2TrianguloIsosceles" type="number">
+            <br>
+            <label for="baseTrianguloIsosceles">
+                Basex:
+            </label>
+            <input id="baseTrianguloIsosceles" type="number">
+            <br>
+            <button type="button" onclick="calcularAreaTrianguloIsosceles()">
+                Calcular Área
+            </button>
+            <button type="button" onclick="calcularPerimetroTrianguloIsosceles()">
+                Calcular Perímetro
+            </button>
+            <br>
+            <p id="resultadoIsoceles"></p>
         </form>
     </section>
     <script src="./figuras.js"></script>
